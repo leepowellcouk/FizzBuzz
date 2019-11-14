@@ -1,0 +1,144 @@
+/**
+ * GLOBAL
+ */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/**
+ * APP
+ */
+.app {
+  border: 1px solid lightgray;
+  padding: 20px;
+}
+
+.app__heading {
+  margin: 0 0 20px;
+  font-weight: 500px;
+  text-align: center;
+}
+
+.app__heading::after {
+  content: '\01F525';
+  margin: 0 0 0 5px;
+}
+
+/**
+ * FIZZ
+ */
+.fizz {
+  color: green;
+}
+
+/**
+ * BUZZ
+ */
+.buzz {
+  color: orange;
+}
+
+/**
+ * FORM
+ */
+.form__label {
+  display: block;
+  text-align: center;
+}
+
+.form__control {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid lightgrey;
+  font-size: 20px;
+  margin: 10px 0 0;
+  text-align: center;
+}
+
+.form__error {
+  display: block;
+  margin: 10px 0 0;
+  color: darkred;
+}
+
+/**
+ * LIST
+ */
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.list__item {
+  text-align: center;
+  padding: 15px 10px;
+  border-bottom: 1px solid lightgray;
+}
+
+.list__item:last-child {
+  border-bottom: none;
+}
+
+/**
+ * PAGINATION
+ */
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+
+.pagination__list,
+.pagination__item {
+  display: inline-block;
+}
+
+.pagination__list {
+  list-style: none;
+  padding: 0;
+  margin: 0 15px;
+}
+
+.pagination__item {
+  margin: 0 5px;
+}
+
+.pagination button {
+  all: initial;
+  font: inherit;
+  cursor: pointer;
+}
+
+.pagination button:hover,
+.pagination button:focus {
+  text-decoration: underline;
+}
+
+.pagination button:disabled {
+  color: lightgray;
+  cursor: default;
+}
+
+.pagination button:disabled:hover,
+.pagination button:disabled:focus {
+  text-decoration: none;
+}
+
+.pagination__previous::before {
+  content: '<';
+  margin: 0 5px 0 0;
+}
+
+.pagination__next::after {
+  content: '>';
+  margin: 0 0 0 5px;
+}
+
+.pagination__page--current {
+  font-weight: bold;
+}
